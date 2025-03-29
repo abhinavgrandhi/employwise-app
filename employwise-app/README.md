@@ -1,12 +1,20 @@
-# React + Vite
+EmployWise App
+EmployWise is a React application built with Vite for managing users. It includes a login page, a user list, and an edit user functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+About the Project;
+                 This project mainly uses five files. Other folders like components/ are not used.
+                     src/main.jsx - Entry point of the React application
+                     src/App.jsx - Main application file
+                     src/routes.jsx - Manages application routing using react-router-dom
+                     src/pages/Login.jsx - Login page for authentication
+                    src/pages/UserList.jsx - Displays a list of users
+                    src/pages/EditUser.jsx - Provides an interface for editing user details
+Installation:
+              Install Vite globally using the following command-npm create vite@latest app_name
+               Navigate to the project folder
+               Install dependencies-npm install
+              Start the development server-npm run dev
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Notes:
+      Only five files are used, and extra components are not included
+     The edit user functionality is working, and changes are logged in the console, but the updated user details are not reflecting in UserList.jsx
