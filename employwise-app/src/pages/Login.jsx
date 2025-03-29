@@ -1,4 +1,3 @@
-// Modified Login component with both styling and functional fixes
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../services/authService";
@@ -17,7 +16,7 @@ function Login() {
       localStorage.setItem("token", data.token);
       navigate("/users");
     } catch (err) {
-      setError(err.message || "Login failed"); // Ensure proper error handling
+      setError(err.message || "Login failed"); 
     }
   };
 
@@ -29,7 +28,7 @@ function Login() {
           <Alert 
             variant="danger" 
             dismissible 
-            onClose={() => setError("")} // Add close handler
+            onClose={() => setError("")} 
             className="auth-alert"
           >
             {error}
@@ -44,7 +43,7 @@ function Login() {
               onChange={(e) => setEmail(e.target.value)}
               className="auth-input"
               required
-              autoFocus // Add auto focus
+              autoFocus 
             />
           </Form.Group>
           <Form.Group className="mb-4">
