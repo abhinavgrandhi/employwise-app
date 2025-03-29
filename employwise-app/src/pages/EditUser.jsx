@@ -32,7 +32,7 @@ function EditUser() {
       const updatedData = await updateUser(id, user);
       setMessage("User updated successfully!");
 
-      console.log("EditUser - Updated Data:", updatedData); // Debugging log
+      console.log("EditUser - Updated Data:", updatedData); 
       setTimeout(() => {
         navigate("/users", { state: { updatedUser: updatedData } });
       }, 1000);
